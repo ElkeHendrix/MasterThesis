@@ -1,5 +1,3 @@
-### This is a basis script that can be used for everything###
-
 rm(list=ls())
 ls()
 # Make sure the list is empty
@@ -9,5 +7,6 @@ getwd()
 datdir<-file.path("data")
 #set working directory and data directory
 
-##.libPaths("M:/homes/hendr151/my documents/R/win-library/3.3")
-
+library(rgdal)
+getGDALVersionInfo()
+library(raster)
